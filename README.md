@@ -19,7 +19,7 @@ Se enlista una serie de referencias muy buenas que permite apoyar el aprendizaje
 
 * Automated Web Scraping with R. https://resulumit.com/teaching/scrp_workshop.html
 * Harvesting the web with rvest. https://rvest.tidyverse.org/articles/harvesting-the-web.html
-* RSelenium Basics.https://cran.r-project.org/web/packages/RSelenium/vignettes/basics.html
+* RSelenium Basics. https://cran.r-project.org/web/packages/RSelenium/vignettes/basics.html
 * How to drive a Web browser with R (and RSelenium). https://www.computerworld.com/article/2971265/how-to-drive-a-web-browser-with-r-and-rselenium.html
 * Polite Github Repository. https://github.com/dmi3kno/polite
 * Ethics in Web Scraping. https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01
