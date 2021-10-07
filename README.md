@@ -6,4 +6,8 @@ R es una plataforma de código abierto que ha sido ampliamente desarrollada en l
   <img src="https://www.memecreator.org/static/images/memes/5329011.jpg"/>
 </p>
 
+# Contenido del repositorio
 
+* Manual de instalación de librería RSelenium
+* Presentación del Taller en formato HTML.
+* R Scripts de ejemplos básicos con rvest y RSelenium
