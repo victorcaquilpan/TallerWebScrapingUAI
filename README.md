@@ -6,9 +6,6 @@ R es una plataforma de código abierto que ha sido ampliamente desarrollada en l
 <p align="center">
 <img width="170" src = "https://www.franklinsantos.com/posts/2021-05-31-webscraping/logo.png" /> <img src = "https://miro.medium.com/max/724/1*YaNXYO-ShWtG26jm9yhR6A.png" width ="200" />
 </p>
-<p align="center">
-  <img width="200" src="https://www.memecreator.org/static/images/memes/5329011.jpg"/>
-</p>
 
 # Contenido del repositorio
 
