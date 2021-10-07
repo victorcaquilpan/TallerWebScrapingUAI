@@ -27,5 +27,5 @@ Se enlista una serie de referencias muy buenas que permite apoyar el aprendizaje
 
 
 <p align="center">
-<img width="170" src = "https://www.memecreator.org/static/images/memes/5329011.jpg">
+<img width="400" src = "https://www.memecreator.org/static/images/memes/5329011.jpg">
 </p>
