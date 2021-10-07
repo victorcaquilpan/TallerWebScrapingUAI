@@ -25,7 +25,3 @@ Se enlista una serie de referencias muy buenas que permite apoyar el aprendizaje
 * Ethics in Web Scraping. https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01
 * $100 to $1000 per hour Web Scraping with Python. https://medium.com/@dennisyd/100-to-1000-hours-with-python-pandas-and-selenium-9cf5c40b46d2
 
-
-<p align="center">
-<img width="150" src = "https://www.memecreator.org/static/images/memes/5329011.jpg">
-</p>
