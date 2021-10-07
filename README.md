@@ -15,7 +15,7 @@ R es una plataforma de código abierto que ha sido ampliamente desarrollada en l
 
 # Referencias
 
-Se enlista una serie de referencias muy buenas que permite apoyar el aprendizaje en cuanto a técnicas de raspado Web y librerías mostradas. 
+Se enlista una serie de referencias **muy buenas** que permite apoyar el aprendizaje en cuanto a técnicas de raspado Web y librerías mostradas. 
 
 * Automated Web Scraping with R. https://resulumit.com/teaching/scrp_workshop.html
 * Harvesting the web with rvest. https://rvest.tidyverse.org/articles/harvesting-the-web.html
