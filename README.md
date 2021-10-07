@@ -9,9 +9,9 @@ R es una plataforma de código abierto que ha sido ampliamente desarrollada en l
 
 # Contenido del repositorio
 
-* Manual de instalación de librería RSelenium.
-* Presentación del Taller en formato HTML.
-* R Scripts de ejemplos básicos con rvest y RSelenium.
+* Manual de instalación de librería RSelenium
+* Presentación del Taller en formato HTML
+* R Scripts de ejemplos básicos con rvest y RSelenium
 
 # Referencias
 
