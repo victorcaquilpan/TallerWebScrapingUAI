@@ -13,6 +13,8 @@ R es una plataforma de código abierto que ha sido ampliamente desarrollada en l
 * Presentación del Taller en formato HTML
 * R Scripts de ejemplos básicos con rvest y RSelenium
 
+Nota: Todo el contenido está hecho en R y RMarkdown
+
 # Referencias
 
 Se enlista una serie de referencias **muy buenas** que permite apoyar el aprendizaje en cuanto a técnicas de raspado Web y librerías mostradas. 
