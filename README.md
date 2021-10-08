@@ -7,6 +7,8 @@ R es una plataforma de código abierto que ha sido ampliamente desarrollada en l
 <img width="170" src = "https://www.franklinsantos.com/posts/2021-05-31-webscraping/logo.png" /> <img src = "https://miro.medium.com/max/724/1*YaNXYO-ShWtG26jm9yhR6A.png" width ="200" />
 </p>
 
+Con este tutorial van a aprender a cómo obtener información de tipo texto, tablas, imagenes y archivos de todo tipo.
+
 # Contenido del repositorio
 
 * Manual de instalación de librería RSelenium
