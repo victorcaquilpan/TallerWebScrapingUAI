@@ -1,13 +1,11 @@
 # Instalación de librerías
 # install.packages("dplyr")
 # install.packages("stringr")
-# install.packages("robotstxt")
 # install.packages("rvest")
 
 # Carga de librerías ----
 library(dplyr)     # Manejo de datos
 library(stringr)   # Manejo de texto
-library(robotstxt) # Consulta a protocolo robots.txt
 library(rvest)     # Raspado Web 
 
 # Introducción a rvest ----
@@ -91,10 +89,3 @@ for (descarga in 1:2) { # Aquí puedo setear length(objetos) para descargar todo
   
 }
 
-# Raspado ético ----
-
-# Revisamos si se nos permite ingresar
-paths_allowed(domain = "https://www.bcn.cl/portal/")
-
-# Luego, podemos leer la página sin problemas
-read_html("https://www.bcn.cl/portal/")
