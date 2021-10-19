@@ -53,10 +53,10 @@ text-align: justify}
 
 ## RSelenium
 
-RSelenium es una librería disponible en R que nos permite explorar páginas Webs de forma automatizada. A su vez, es una librería que funciona de una manera un poco más compleja ya que tiene dependencias externas a R. 
+RSelenium es una librería disponible en R que nos permite explorar páginas Webs de forma automatizada. A su vez, es una librería que funciona de una manera un poco compleja ya que tiene dependencias externas a R. 
 
 
-En el taller de &quot;Introducción al Webscraping con R&quot; se realizarán ejercicios prácticos por lo que se recomienda seguir los pasos de este manual para instalar de forma satisfactoria la librería RSelenium.
+En el taller de &quot;Introducción al Webscraping con R&quot; se realizarán ejercicios prácticos con RSelenium por lo que se recomienda seguir los pasos de este manual para instalar de forma satisfactoria dicha librería.
 
 La instalación de la librería consta de 6 pasos y lleva en promedio unos **5 a 10 minutos**.
 
@@ -122,7 +122,7 @@ install.packages(&quot;RSelenium&quot;,dependencies = TRUE)
 
 ## Pasos de la Instalación
 
-**6) Chequeo**. Finalmente para probar que todo esté correctamente instalado. Les recomiendo correr en una sesión de R:
+**6) Chequeo**. Para probar que todo esté correctamente instalado, deben correr en una sesión de R:
 
 
 ```r
@@ -132,9 +132,9 @@ rsDriver(port = 4568L,
          chromever = &quot;93.0.4577.63&quot;)
 ```
 
-Esto puede demorar un par de minutos. Si se les abre una ventana de Google Chrome en blanco, esto significa que RSelenium está funcionando sin problemas. Pueden cerrar tanto la ventana que se abrió como R/RStudio.
+Esto puede demorar un par de minutos. Si se les abre una ventana de Google Chrome en blanco, significa que RSelenium está funcionando. Ahora Pueden cerrar tanto la ventana que se abrió como la sesión de R/RStudio. En el caso que  tengan un error relativo al puerto (*port*), pueden utilizar otro puerto tal como **4569L** o **4570L** y volver a correr el código.
 
-&lt;img src=&quot;data:image/png;base64,#ConsolaWeb.jpg&quot; width=&quot;550px&quot; style=&quot;display: block; margin: auto;&quot; /&gt;
+&lt;img src=&quot;data:image/png;base64,#ConsolaWeb.jpg&quot; width=&quot;450px&quot; style=&quot;display: block; margin: auto;&quot; /&gt;
 
 ---
 
