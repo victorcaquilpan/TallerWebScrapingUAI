@@ -15,6 +15,7 @@ url <- "https://datos.gob.cl/organization"
 # Ingresamos
 lectura_pagina <- read_html(url)
 
+# Extracción de información de una página -----
 
 # Extraemos la informacionl nombre de organizaciones y su descripción
 consulta <-lectura_pagina %>% html_elements(css = ".text-lines-7-3 , .text-lines-5-2") %>% html_text2()
@@ -27,6 +28,7 @@ descripcion <- consulta[which(1:length(consulta) %% 2 == 0)]
 # Generamos dataframe
 datos <- data.frame(nombres,descripcion)
 
+# Extracción de información de múltiples páginas ----
 
 # Podemos ver que hay muchas hojas de organizaciones. ¿Cómo podríamos obtener
 # el nombre delas organizaciones disponibles en todas las hojas?

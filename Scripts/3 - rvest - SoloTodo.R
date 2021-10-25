@@ -14,6 +14,8 @@ url <- "https://www.solotodo.cl/notebooks?score_games_start=450&ordering=offer_p
 # Leemos la página 
 lectura_pagina <- read_html(url)
 
+# Extracción de información de una página ----
+
 # Vemos que podemos extraer el nombre de los notebooks disponibles
 lectura_pagina %>% 
   html_elements(css = "#category-browse-results-card h3") %>% html_text2()
@@ -35,6 +37,8 @@ which(1:length(datos_solotodo) %% 2 == 1)
 Notebook <- datos_solotodo[which(1:length(datos_solotodo) %% 2 == 1)]
 Precio <- datos_solotodo[which(1:length(datos_solotodo) %% 2 == 0)]
 Tabla <- data.frame(Notebook,Precio)
+
+# Extracción de información de múltiples páginas ----
 
 # Ya logramos extraer la información de una página ¿Podemos extraer la información de las demás páginas?
 
