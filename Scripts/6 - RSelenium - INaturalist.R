@@ -98,7 +98,7 @@ for (especie in 1:length(especies)) {
   ingreso_lugar$sendKeysToElement(list("Chile",key = "enter"))
   
   # Esperemos unos segundos 
-  Sys.sleep(5)
+  Sys.sleep(3)
   
   # Creamos los objetos resultantes
   assign(str_c("enlaces",especies[especie]),
