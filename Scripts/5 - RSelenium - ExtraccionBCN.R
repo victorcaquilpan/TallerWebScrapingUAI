@@ -25,6 +25,8 @@ servidor <- driver$server
 # Ingresamos a la pagina de interes
 navegador$navigate(url = url)
 
+# Extraer informacion de un caso ----
+
 # Vamos al selector de partidos
 selector_partidos <- navegador$findElement(using = "css",value = "#lista_partidos")
 
@@ -51,6 +53,8 @@ partido$getElementText() %>% as.character()
 navegador$goBack()
 
 # Sabiendo esto, podemos hacer un ciclo para ir obteniendo la información del año en que  inicio cada partido
+
+# Extraer informacion de varios casos (error) ----
 
 # Ingresamos a la pagina de interes
 navegador$navigate(url = url)
@@ -103,8 +107,9 @@ while(partido_n < 31) {
   
 }
 
-# Bajo este enfoque hay un problema, ya que la fecha no siempre se ubica 
-# donde mismo
+# Bajo este enfoque hay un problema, ya que la fecha no siempre se ubica donde mismo
+
+#Extraer informacion de varios casos (Ok) ----
 
 # Ingresamos nuevamente a la pagina de interes 
 navegador$navigate(url = url)

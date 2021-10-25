@@ -25,6 +25,8 @@ servidor <- driver$server
 # Ingresamos a la pagina de interes
 navegador$navigate(url = url)
 
+# Analizando caso individual ----
+
 # Supongamos que queremos buscar tres especies de aves en Chile. Martin pescador de collar, Zorzal Patagónico y Pato jergon
 
 # Primero ingresamos la información de búsqueda
@@ -38,8 +40,11 @@ chequeo_especie$clickElement()
 ingreso_lugar <- navegador$findElement(using = "name",value = "primary_q2")
 ingreso_lugar$sendKeysToElement(list("Chile",key = "enter"))
 
-# Esperemos unos segundos 
-Sys.sleep(5)
+# Seleccionamos el cuerpo, podemos aplicar algunas opciones
+cuerpo <- navegador$findElement("css", "body")
+
+# Bajamos la página para visualizar las demás imagenes
+cuerpo$sendKeysToElement(list(key = "page_down"))
 
 # Vamos a la primera imagen
 imagen1 <- navegador$findElement(using = "css",value = "#result-grid > div > div:nth-child(1) > div > a")
@@ -66,9 +71,9 @@ for (archivo in 1:10) { # descargamos las primeras 10 imagenes
   
 }
 
+# Analizando varios casos ----
+
 # Podemos repetir este mismo proceso para las demás especies. El siguiente segmento de código realiza todo el proceso en conjunto
-
-
 especies <- c("Martin pescador de Collar","Zorzal Patagónico","Pato jergon")
 
 # Creamos un ciclo for
