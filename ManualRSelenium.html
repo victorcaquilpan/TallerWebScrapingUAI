@@ -61,7 +61,7 @@ RSelenium es una librería disponible en R que nos permite explorar páginas Web
 
 En el taller de &quot;Introducción al Webscraping con R&quot; se realizarán ejercicios prácticos con RSelenium por lo que se recomienda seguir los pasos de este manual para instalar de forma satisfactoria dicha librería.
 
-La instalación de la librería consta de 6 pasos y lleva en promedio unos **5 a 10 minutos**.
+La instalación de la librería consta de 6 pasos y lleva en promedio unos **5 a 10 minutos**. Se sugiere disponer de una versión de R que sea [4.0 o mayor](https://cran.dcc.uchile.cl/).
 
 ---
 
@@ -77,14 +77,14 @@ La instalación de la librería consta de 6 pasos y lleva en promedio unos **5 a
 
 **3) Instalación de RTools**. Rtools es un conjunto de herramientas de R, que permite entre otras cosas, trabajar con librerías que están en desarrollo o en otras fuentes (no CRAN). Para la instalación, simplemente pueden descargarlo en esta [página](https://cran.r-project.org/bin/windows/Rtools/).
 
-Una vez que lo descarguen e instalen, tienen que abrir una sesión de R/Rstudio y en la consola introducir la siguiente línea de código:
+Una vez que lo descarguen e instalen, tienen que abrir una sesión de R/Rstudio y en la consola introducir la siguiente línea de código (para R 4.0 o mayor):
 
 
 ```r
 writeLines(&#39;PATH=&quot;${RTOOLS40_HOME}\\usr\\bin;${PATH}&quot;&#39;, con = &quot;~/.Renviron&quot;)
 ```
 
-**En el caso de Mac**, no es necesario instalar RTools. Solo se requiere chequear si la herramienta de línea de comando de Xcode ya está instalado. Si no está instalado, se recomienda seguir los pasos de este [blog](https://johnmuschelli.com/neuroc/installing_devtools/index.html).
+**En el caso de Mac**, no es necesario instalar RTools. Solo se requiere chequear si la herramienta de línea de comando de Xcode ya está instalada. Si no está instalada, se recomienda seguir los pasos de este [blog](https://johnmuschelli.com/neuroc/installing_devtools/index.html).
 
 ---
 
@@ -111,7 +111,7 @@ devtools::install_github(&quot;ropensci/RSelenium&quot;)
 
 En este punto lo más probable es que en la consola de R, les aparezca un listado de librerías que se requieren instalar. En esta parte se debe ingresar en la consola el valor numérico uno (&quot;1&quot;) para ordenar que todas las dependecias sean instaladas.
 
-Es posible que les aparezca algún problema con respecto a otras librerías previamente instaladas. Si les ocurre esto les recomiendo correr en una sesión de R/RStudio las siguientes líneas de código:
+Es posible que les aparezca algún problema con respecto a otras librerías previamente instaladas. Si les ocurre esto les recomiendo correr en R las siguientes líneas de código:
 
 
 ```r
@@ -125,7 +125,7 @@ install.packages(&quot;RSelenium&quot;,dependencies = TRUE)
 
 ## Pasos de la Instalación
 
-**6) Chequeo**. Para probar que todo esté correctamente instalado, deben correr en una sesión de R:
+**6) Chequeo**. Para probar que todo esté correctamente instalado, deben correr en una sesión de R lo siguiente:
 
 
 ```r

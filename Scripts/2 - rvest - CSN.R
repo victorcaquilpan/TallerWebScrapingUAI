@@ -1,4 +1,9 @@
-#Carga de librerias
+# Instalación de librerías
+# install.packages("dplyr")
+# install.packages("stringr")
+# install.packages("rvest")
+
+#Carga de librerías
 library(rvest)
 library(stringr)
 library(dplyr)
