@@ -25,7 +25,7 @@
 
 
 
-class: inverse, middle,left
+class: inverse, middle,center
 
 background-image: url(&quot;data:image/png;base64,#MochoBlanco.jpg&quot;)
 background-size: cover
@@ -135,9 +135,34 @@ rsDriver(port = 4568L,
          chromever = &quot;93.0.4577.63&quot;)
 ```
 
-Esto puede demorar un par de minutos. Si se les abre una ventana de Google Chrome en blanco, significa que RSelenium está funcionando. Ahora Pueden cerrar tanto la ventana que se abrió como la sesión de R/RStudio. En el caso que  tengan un error relativo al puerto (*port*), pueden utilizar otro puerto tal como **4569L** o **4570L** y volver a correr el código.
+Esto puede demorar un par de minutos. Si se les abre una ventana de Google Chrome en blanco, significa que RSelenium está funcionando. Ahora Pueden cerrar tanto la ventana que se abrió como la sesión de R/RStudio.
 
 &lt;img src=&quot;data:image/png;base64,#ConsolaWeb.jpg&quot; width=&quot;450px&quot; style=&quot;display: block; margin: auto;&quot; /&gt;
+
+---
+
+## Potenciales problemas
+
+**1) Puerto en uso**. Si al correr el script anterior les aparece un error relativo al puerto (*port*), pueden utilizar otro puerto tal como **4569L** o **4570L** y volver a correr el código.
+
+**2) Version de driver no coincide**. Puede que al correr el script anterior se les genere un error que haga mención a la versión de Google Chrome a utilizar.
+
+
+```r
+Error in chrome_ver(chromecheck[[&quot;platform&quot;]], chromever) :
+  version requested doesnt match versions available = 94.0.4606.61,95.0.4638.54,96.0.4664.18&quot;
+```
+
+En este caso, deben modificar el argumento **chromever** para que esté referenciado a una de las versiones que les aparecen en pantalla (ojala nunca usar la más actual, porque tiende a presentar ciertos inconvenientes). Ejemplo:
+
+
+```r
+library(RSelenium) 
+rsDriver(port = 4568L, 
+         browser = &quot;chrome&quot;, 
+         chromever = &quot;94.0.4606.61&quot;)
+```
+
 
 ---
 
