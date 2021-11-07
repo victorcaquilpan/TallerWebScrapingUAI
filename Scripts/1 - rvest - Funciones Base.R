@@ -70,15 +70,21 @@ read_html(url_coberturas) %>%
 
 url_coberturas <- "https://www.bcn.cl/siit/mapas_vectoriales/index_html"
 
-# Vamos a extraer los enlaces de descarga de las coberturas disponibles 
-objetos <- read_html(url_coberturas) %>% 
+# Vamos a extraer los enlaces de descarga de las coberturas disponibles. Tenemos dos enfoques
+objetos_con_selector <- read_html(url_coberturas) %>% 
+  html_elements(css = ".flex-grid-item a") %>% html_attr("href")
+
+# Vemos la lista de enlaces
+objetos_con_selector
+
+objetos_hijos <- read_html(url_coberturas) %>% 
   html_element(css = ".flex-grid") %>% 
   html_children() %>% 
   html_children() %>% 
   html_attr("href")
 
 # Vemos la lista de enlaces
-objetos
+objetos_hijos
 
 # Podemos utilizar una función de descarga
 for (descarga in 1:2) { # Aquí puedo setear length(objetos) para descargar todos los objetos
@@ -88,4 +94,3 @@ for (descarga in 1:2) { # Aquí puedo setear length(objetos) para descargar todo
                 destfile = str_c(descarga,".zip"))
   
 }
-
