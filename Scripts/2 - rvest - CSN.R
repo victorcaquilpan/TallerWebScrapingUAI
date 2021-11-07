@@ -4,9 +4,9 @@
 # install.packages("rvest")
 
 #Carga de librerías
-library(rvest)
-library(stringr)
 library(dplyr)
+library(stringr)
+library(rvest)
 
 # Extracción de información de una página -----
 
