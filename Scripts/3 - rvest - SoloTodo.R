@@ -25,7 +25,7 @@ lectura_pagina %>%
   html_elements(css = "#category-browse-results-card .flex-grow a , #category-browse-results-card h3") %>% 
   html_text2()
 
-# Ahora que sabemos cómo extraer la inforamación, tenemos que ver cómo dejarla en un dataframe
+# Ahora que sabemos cómo extraer la información, tenemos que ver cómo dejarla en un dataframe
 datos_solotodo <- lectura_pagina %>% 
                   html_elements(css = "#category-browse-results-card .flex-grow a , #category-browse-results-card h3") %>% 
                   html_text2()
@@ -42,7 +42,7 @@ Tabla <- data.frame(Notebook,Precio)
 
 # Ya logramos extraer la información de una página ¿Podemos extraer la información de las demás páginas?
 
-# Creamos un dataframe vacio
+# Creamos un dataframe vacío
 Tabla_resultado <- data.frame(Notebook = as.character(),
                               Precio = as.character())
 

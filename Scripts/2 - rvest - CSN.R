@@ -10,7 +10,7 @@ library(dplyr)
 
 # Extracción de información de una página -----
 
-# Consultamos pagina cel centro sismológico nacional
+# Consultamos página del centro sismológico nacional
 url_ultimos_sismos <- "http://www.sismologia.cl/ultimos_sismos.html"
 
 # Extraemos la tabla
@@ -39,14 +39,14 @@ dias_enero[1:9] <- str_c("0",dias_enero[1:9])
 # Modificacion final
 dias_enero <- str_c("202101",dias_enero)
 
-# Creamos dataframe vacio para guardar los valores
+# Creamos dataframe vacío para guardar los valores
 sismos <- data.frame()
 
 
 # Realizamos consulta
 for (dias in seq_along(dias_enero)) {
   
-  # Imprimamos el dia en el que vamos
+  # Imprimamos el día en el que vamos
   print(str_c("Consultando dia: ",dias))
   
   # Consulta diaria

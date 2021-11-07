@@ -22,12 +22,12 @@ driver <-  rsDriver(port = 4571L,
 navegador <- driver$client
 servidor <- driver$server
 
-# Ingresamos a la pagina de interes
+# Ingresamos a la página de interes
 navegador$navigate(url = url)
 
 # Analizando caso individual ----
 
-# Supongamos que queremos buscar tres especies de aves en Chile. Martin pescador de collar, Zorzal Patagónico y Pato jergon
+# Supongamos que queremos buscar tres especies de aves en Chile. Martín pescador de collar, Zorzal Patagónico y Pato jergon
 
 # Primero ingresamos la información de búsqueda
 ingreso_especie <- navegador$findElement(using = "name",value = "taxon_name")
