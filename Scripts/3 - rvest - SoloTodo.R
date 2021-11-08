@@ -52,7 +52,7 @@ for (pagina in 1:22) {
   url <- str_c("https://www.solotodo.cl/notebooks?score_games_start=450&ordering=offer_price_usd&page=",pagina)
   
   # Colocamos una mensaje en pantalla
-  print(str_c("Leyendo página: ",pagina))
+  message("Leyendo página: ",pagina)
   
   # Extraemos la información
   datos_solotodo <- read_html(url) %>% # vamos a ocupar read_html para que sea más rápido este proceso 
@@ -69,4 +69,5 @@ for (pagina in 1:22) {
   
 }
 
-
+# Vemos la tabla resultante
+head(Tabla_resultado)

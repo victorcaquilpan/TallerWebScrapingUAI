@@ -114,6 +114,9 @@ for (especie in 1:length(especies)) {
 }
 
 # Podemos chequear los objetos creados con los respectivos enlaces
+`enlacesMartin pescador de Collar`
+`enlacesPato jergon`
+`enlacesZorzal Patagónico`
 
 # Cerramos navegador y servidor
 navegador$close()

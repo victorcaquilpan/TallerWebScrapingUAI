@@ -90,7 +90,8 @@ objetos_hijos
 for (descarga in 1:2) { # Aquí puedo setear length(objetos) para descargar todos los objetos
   
   # Realizamos la descarga
-  download.file(url = objetos[descarga],
+  download.file(url = objetos_hijos[descarga],
                 destfile = str_c(descarga,".zip"))
   
 }
+getwd()

@@ -68,7 +68,7 @@ partido_n <- 1
 while(partido_n < 31) {
   
   # Enviamos mensaje
-  print(str_c("Consultado partido n: ",partido_n))
+  message("Consultando partido n: ",partido_n)
   
   # Vamos al selector de partidos
   selector_partidos <- navegador$findElement(using = "css",value = "#lista_partidos")
@@ -123,7 +123,7 @@ partido_n <- 1
 while(partido_n < 31) {
   
   # Enviamos mensaje
-  print(str_c("Consultado partido n: ",partido_n))
+  message("Consultando partido n: ",partido_n)
   
   # Vamos al selector de partidos
   selector_partidos <- navegador$findElement(using = "css",value = "#lista_partidos")

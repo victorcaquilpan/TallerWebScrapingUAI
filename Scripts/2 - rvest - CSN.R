@@ -18,6 +18,9 @@ tabla_sismos <- read_html(url_ultimos_sismos) %>%
   html_element(css = "#main > table:nth-child(3)") %>% 
   html_table()
 
+# Vemos tabla
+tabla_sismos
+
 # Podemos consultar sismos de distintas fechas
 url_sismosdia <- "http://www.sismologia.cl/catalogo/2021/10/20211027.html"
 
@@ -47,7 +50,7 @@ sismos <- data.frame()
 for (dias in seq_along(dias_enero)) {
   
   # Imprimamos el día en el que vamos
-  print(str_c("Consultando dia: ",dias))
+  message("Consultando dia: ",dias)
   
   # Consulta diaria
   tabla_dia <- read_html(str_c(url_base_sismos,dias_enero[dias],".html")) %>% 
@@ -60,3 +63,4 @@ for (dias in seq_along(dias_enero)) {
 }
 
 # Vemos el dataframe resultante
+head(sismos)
