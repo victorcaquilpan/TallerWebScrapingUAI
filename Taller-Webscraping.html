@@ -941,7 +941,7 @@ Vamos a ver un caso en particular. La BCN dispone de una gran cantidad de inform
 
 ## Uso de `rvest`
 
-Es parte del universo de librerías `tidyverse`. La principal función es `read_html()`, la cual permite leer una página, devolviendo un objeto XML (código fuente).
+La principal función es `read_html()`, la cual permite leer una página, devolviendo un objeto XML (código fuente).
 
 --
  
@@ -969,7 +969,7 @@ read_html(url)
 
 ## Uso de `rvest`
 
-Permite extraer información utilizando una simple nomenclatura. A través de la selección de una parte de una página (nodo), es posible extraer algún dato puntual.
+Permite extraer información utilizando una simple nomenclatura. A través de la selección de una parte de una página, es posible extraer algún dato puntual.
 
 Algunas de las funciones más útiles:
 
@@ -1378,13 +1378,13 @@ Por otro lado, a nivel de elemento **[elemento$...]** tenemos:
 |:------------------------|:|---------------------------------------------------------:|
 |getElementAttribute()    |Devuelve el valor asociado a un atributo determinado        |
 |getElementText()         |Devuelve el texto asociado a un elemento                    |
-|sendKeysToElement        |Envia un texto a un elemento determinado                    |
+|sendKeysToElement()      |Envia un texto a un elemento determinado                    |
 |highlightElement()       |El elemento se destaca en amarillo                          |
 |clickElement()           |Envia un click a un elemento determinado                    |
 |clearElement()           |Limpia el texto en un elemento determinado                  |
 
 
-Tener presente que también podemos combinar **RSelenium** con **rvest** para extraer algún contenido en particular
+Tener presente que también podemos combinar **RSelenium** con **rvest** para extraer algún contenido en particular.
 
 ---
 
@@ -1394,7 +1394,7 @@ Cómo hemos logrado apreciar, existen diversas formas de encontrar un elemento d
 
 
 ```r
-&lt;p id = &quot;tomate&quot; class = &quot;secundario&quot; name = &quot;dato&quot;&gt; texto1&lt;/p&gt;
+&lt;p id = &quot;tomate&quot; class = &quot;primario&quot; name = &quot;dato&quot;&gt; texto1&lt;/p&gt;
 &lt;p id = &quot;palta&quot; class = &quot;secundario&quot; name = &quot;prediccion&quot;&gt; texto2&lt;/p&gt;
 ```
 
@@ -1417,7 +1417,7 @@ Cómo hemos logrado apreciar, existen diversas formas de encontrar un elemento d
 
 
 ```r
-&lt;p id = &quot;tomate&quot; class = &quot;secundario&quot; name = &quot;dato&quot;&gt; texto1&lt;/p&gt;
+&lt;p id = &quot;tomate&quot; class = &quot;primario&quot; name = &quot;dato&quot;&gt; texto1&lt;/p&gt;
 *&lt;p id = &quot;palta&quot; class = &quot;secundario&quot; name = &quot;prediccion&quot;&gt; texto2&lt;/p&gt;
 ```
 
@@ -1432,13 +1432,12 @@ navegador$findElement(using =&quot;css&quot;, value =&quot;#palta&quot;)
 # Solo con id
 navegador$findElement(using =&quot;id&quot;, value =&quot;palta&quot;)
 # Solo con name
-navegador$findElement(using =&quot;name&quot;, value =&quot;predicción&quot;)
-# Podríamos utilizar class, pero nos traería ambos elementos
+navegador$findElement(using =&quot;name&quot;, value =&quot;prediccion&quot;)
+# Podríamos utilizar class
 navegador$findElement(using =&quot;class&quot;, value =&quot;secundario&quot;)
 # También utilizando Xpath
 navegador$findelement(using =&quot;xpath&quot;, value =&#39;//*[(@id = &quot;palta&quot;)]&#39;)
 ```
-
 
 ---
 
@@ -1513,9 +1512,11 @@ Considerando lo visto hasta el momento en el Taller, podemos resumir lo aprendid
 
 Dado que existen aplicaciones que se prestan para fines maliciosos o que por otro lado pueden afectar el rendimiento de un sitio Web, los desarrolladores de sitios Web implementan diferentes medidas para prevenir la consulta másiva a través de estas aplicaciones.
 
-* Constanstes modificaciones en páginas Web
+* Uso solo a través de un usuario determinado
 
 * Uso de formularios o desafíos (por ejemplo captchas)
+
+* Constanstes modificaciones en páginas Web
 
 &lt;img src=&quot;data:image/png;base64,#Imagenes/Recaptcha.jpg&quot; width=&quot;500px&quot; style=&quot;display: block; margin: auto;&quot; /&gt;
 
