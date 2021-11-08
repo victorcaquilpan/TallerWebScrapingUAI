@@ -14,6 +14,7 @@ Con este tutorial van a aprender a cómo obtener información de tipo texto, tab
 * [Manual de instalación librería RSelenium](https://victorcaquilpan.github.io/TallerWebScrapingUAI/ManualRSelenium.html#1)
 * [Presentación del Taller en formato HTML](https://victorcaquilpan.github.io/TallerWebScrapingUAI/Taller-Webscraping.html#1)
 * [R Scripts de ejemplos básicos con rvest y RSelenium](https://github.com/victorcaquilpan/TallerWebScrapingUAI/tree/main/Scripts)
+* [Presentación breve sobre archivo robots.txt](https://victorcaquilpan.github.io/TallerWebScrapingUAI/Robots.txt.html.html#1)
 
 **Nota: Todo el contenido está hecho en R y RMarkdown**
 
