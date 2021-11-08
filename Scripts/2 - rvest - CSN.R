@@ -15,19 +15,22 @@ url_ultimos_sismos <- "http://www.sismologia.cl/ultimos_sismos.html"
 
 # Extraemos la tabla
 tabla_sismos <- read_html(url_ultimos_sismos) %>% 
-  html_element(css = "#main > table:nth-child(3)") %>% 
+  html_element(css = "#main > table") %>% 
   html_table()
 
 # Vemos tabla
 tabla_sismos
 
 # Podemos consultar sismos de distintas fechas
-url_sismosdia <- "http://www.sismologia.cl/catalogo/2021/10/20211027.html"
+url_sismosdia <- "http://www.sismologia.cl/catalogo/2021/11/20211108.html"
 
 # Extraigamos la tabla del día
 tabla_dia <- read_html(url_sismosdia) %>% 
   html_element(css = "#main > table:nth-child(5)") %>% 
   html_table()
+
+# Observemos la tabla obtenida
+tabla_dia
 
 # Identificamos un patrón en la url
 
@@ -44,7 +47,6 @@ dias_enero <- str_c("202101",dias_enero)
 
 # Creamos dataframe vacío para guardar los valores
 sismos <- data.frame()
-
 
 # Realizamos consulta
 for (dias in seq_along(dias_enero)) {

@@ -89,19 +89,19 @@ navegador$goForward()
 navegador$getTitle()
 
 # Podemos ir a uno de los resultados
-resultados <- navegador$findElement(using = "css",value = ".ellip , .tjvcx")
+resultados <- navegador$findElement(using = "css",value = ".yuRUbf , .NsiYH")
 
 # Podemos obtener el texto de un elemento con getElementText
 resultados$getElementText()
 
 # Con getElementText podemos acceder a todos los elementos
-resultados <- navegador$findElements(using = "css",value = ".ellip , .tjvcx")
+resultados <- navegador$findElements(using = "css",value = ".yuRUbf , .NsiYH")
 
 # Podemos ver el texto de cada resultado de la lista
 resultados[[1]]$getElementText()
-resultados[[2]]$getElementText()
-resultados[[3]]$getElementText()
-resultados[[4]]$getElementText()
+resultados[[6]]$getElementText()
+resultados[[7]]$getElementText()
+resultados[[8]]$getElementText()
 
 # Podemos hacer click a uno de los elementos
 resultados[[1]]$clickElement()

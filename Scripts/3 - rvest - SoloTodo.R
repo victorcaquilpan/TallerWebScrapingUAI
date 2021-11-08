@@ -9,7 +9,7 @@ library(stringr) # Manejo de texto
 library(rvest)   # Raspado Web 
 
 # Pagina para extracción de información - PCFactory
-url <- "https://www.solotodo.cl/notebooks?score_games_start=450&ordering=offer_price_usd&"
+url <- "https://www.solotodo.cl/notebooks?ordering=offer_price_usd&"
 
 # Leemos la página 
 lectura_pagina <- read_html(url)
@@ -46,10 +46,10 @@ Tabla <- data.frame(Notebook,Precio)
 Tabla_resultado <- data.frame(Notebook = as.character(),
                               Precio = as.character())
 
-for (pagina in 1:22) {
+for (pagina in 1:22) { # Consultamos solo las primeras 22 páginas
   
   # Seteamos la página que va a ir variando en el ciclo
-  url <- str_c("https://www.solotodo.cl/notebooks?score_games_start=450&ordering=offer_price_usd&page=",pagina)
+  url <- str_c("https://www.solotodo.cl/notebooks?ordering=offer_price_usd&page=",pagina)
   
   # Colocamos una mensaje en pantalla
   message("Leyendo página: ",pagina)

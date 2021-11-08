@@ -23,6 +23,7 @@ read_html(url) %>%
   html_element(css = "tr:nth-child(1) .font-weight-bold+ td") %>% 
   html_text()
 
+
 # hora vamos a obtener el gentilicio
 read_html(url) %>% 
   html_element(css = "tr:nth-child(2) .font-weight-bold+ td") %>% 
@@ -66,17 +67,16 @@ read_html(url_coberturas) %>%
   html_element(css = "div.flex-grid-item:nth-child(1) > a:nth-child(1)") %>% 
   html_attr("href")
 
-# En ocasiones tendremos que ingresar a los elementos anidados para conseguir la información necesaria.
+# Vamos a extraer los enlaces de descarga de las coberturas disponibles. Tenemos dos enfoques:
 
-url_coberturas <- "https://www.bcn.cl/siit/mapas_vectoriales/index_html"
-
-# Vamos a extraer los enlaces de descarga de las coberturas disponibles. Tenemos dos enfoques
+# Utilizar una selección grupal con SelectorGadget
 objetos_con_selector <- read_html(url_coberturas) %>% 
   html_elements(css = ".flex-grid-item a") %>% html_attr("href")
 
 # Vemos la lista de enlaces
 objetos_con_selector
 
+# Ir a través de un elemento y apuntar a sus elementos anidados
 objetos_hijos <- read_html(url_coberturas) %>% 
   html_element(css = ".flex-grid") %>% 
   html_children() %>% 
@@ -94,4 +94,3 @@ for (descarga in 1:2) { # Aquí puedo setear length(objetos) para descargar todo
                 destfile = str_c(descarga,".zip"))
   
 }
-getwd()

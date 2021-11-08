@@ -64,6 +64,9 @@ inaturalist <- navegador$getPageSource()[[1]] %>% read_html()
 enlaces_martines <- inaturalist %>% html_elements(css = ".has-photo") %>% html_attr(name = "style")
 enlaces_martines <- str_extract(enlaces_martines,pattern = 'https:.*')
 
+# Veamos los enlaces
+enlaces_martines
+
 # Creamos un ciclo para descargar
 for (archivo in 1:10) { # descargamos las primeras 10 imagenes
   
