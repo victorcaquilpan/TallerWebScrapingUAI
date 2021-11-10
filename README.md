@@ -32,4 +32,4 @@ Se enlista una serie de referencias **muy buenas** que permite apoyar el aprendi
 
 # Contacto
 
-Dado la naturaleza dinámica de los sitios Web, es probable que algún script no corra por algún cambio hecho en una página. Si se detecta que algún script no corre, lo más probable es que el problema sea algo de este tipo, por lo tanto se insta a que me lo puedan comunicar para realizar las modificaciones en los scripts. Cualquier duda o sugerencia, por favor contactarme directamente a victor.caquilpan@gmail.com ✌️
+Dado la naturaleza dinámica de los sitios Web, es probable que algún script no corra por algún cambio hecho en una página dentro del último tiempo. Si se detecta que algún script no corre, lo más probable es que el problema sea algo de este tipo, por lo tanto se insta a que me lo puedan comunicar para realizar las modificaciones en los scripts. Cualquier duda o sugerencia, por favor contactarme directamente a victor.caquilpan@gmail.com ✌️
